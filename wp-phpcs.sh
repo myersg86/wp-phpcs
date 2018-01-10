@@ -1,6 +1,7 @@
 #!/bin/bash
 set -ex
 
+chmod +x ./wp-phpcs.sh
 curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
 chmod +x phpcs.phar
 mv phpcs.phar phpcs
