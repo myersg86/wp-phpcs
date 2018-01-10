@@ -11,3 +11,10 @@ mv phpcbf.phar phpcbf
 php phpcbf -h
 git clone -b master https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git ~/wpcs
 php phpcs --config-set installed_paths ~/wpcs
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+chmod +x wp-cli.phar
+sudo mv wp-cli.phar wp
+cd html
+ln -s ~/wp wp
+ln -s ~/phpcs phpcs
+ln -s ~/phpcbf phpcbf
