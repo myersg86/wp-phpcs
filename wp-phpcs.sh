@@ -10,7 +10,7 @@ curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
 chmod +x phpcbf.phar
 mv phpcbf.phar phpcbf
 curl -L http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -o php-cs-fixer
-sudo chmod a+x php-cs-fixer
+chmod +x php-cs-fixer
 git clone -b master https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git ~/wpcs
 php phpcs --config-set installed_paths ~/wpcs
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
